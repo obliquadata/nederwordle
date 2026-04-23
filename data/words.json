@@ -147,7 +147,7 @@
     "word": "groot",
     "definition_nl": "Met veel omvang of formaat.",
     "definition_en": "big",
-    "example_nl": "Amsterdam is groter dan Delft."
+    "example_nl": "De verdwijning van Amelia Earhart is een BLANK mysterie."
   },
   {
     "word": "klein",
@@ -159,7 +159,7 @@
     "word": "nieuw",
     "definition_nl": "Pas gemaakt, gekocht of begonnen.",
     "definition_en": "new",
-    "example_nl": "Ik heb een nieuwe jas."
+    "example_nl": "Dit is een BLANK hoofdstuk."
   },
   {
     "word": "oud",
@@ -195,7 +195,7 @@
     "word": "avond",
     "definition_nl": "Deel van de dag na de middag en voor de nacht.",
     "definition_en": "evening",
-    "example_nl": "Vanavond kijk ik een film."
+    "example_nl": "De BLANK is rustig en stil."
   },
   {
     "word": "morgen",
@@ -321,19 +321,19 @@
     "word": "lezen",
     "definition_nl": "Geschreven tekst begrijpen met je ogen.",
     "definition_en": "to read",
-    "example_nl": "Ik lees elke dag een artikel."
+    "example_nl": "Ik wil vanavond een boek BLANK."
   },
   {
     "word": "kijken",
     "definition_nl": "Je ogen ergens op richten om iets te zien.",
     "definition_en": "to look",
-    "example_nl": "Kijk eens naar dat bord."
+    "example_nl": "We willen vanavond met Cineville een film BLANK."
   },
   {
     "word": "horen",
     "definition_nl": "Geluid met je oren waarnemen.",
     "definition_en": "to hear",
-    "example_nl": "Ik hoor de tram al aankomen."
+    "example_nl": "Je kunt elke eerste maandag van de maand om twaalf uur de sirene BLANK."
   },
   {
     "word": "maken",
@@ -348,16 +348,16 @@
     "example_nl": "Kun je mij het zout BLANK?"
   },
   {
-    "word": "nemen",
+    "word": "meenemen",
     "definition_nl": "Iets pakken of ontvangen.",
     "definition_en": "to take",
-    "example_nl": "Ik neem de trein naar Leiden."
+    "example_nl": "Je moet je paspoort BLANK."
   },
   {
     "word": "komen",
     "definition_nl": "Zich naar een plaats toe bewegen.",
     "definition_en": "to come",
-    "example_nl": "Kom je morgen langs?"
+    "example_nl": "We willen vanavond allemaal naar mijn verjaardag BLANK."
   },
   {
     "word": "gaan",
@@ -366,10 +366,10 @@
     "example_nl": "We BLANK straks naar buiten."
   },
   {
-    "word": "blijven",
+    "word": "blijf",
     "definition_nl": "Niet weggaan; op dezelfde plek of in dezelfde toestand zijn.",
     "definition_en": "to stay",
-    "example_nl": "Ik blijf dit weekend thuis."
+    "example_nl": "Welkom in Europa, BLANK hier tot ik dood ga"
   },
   {
     "word": "begin",
@@ -429,7 +429,7 @@
     "word": "zee",
     "definition_nl": "Grote hoeveelheid zout water.",
     "definition_en": "sea",
-    "example_nl": "De Noordzee ligt dicht bij Den Haag."
+    "example_nl": "De NoordBLANK ligt dicht bij Den Haag."
   },
   {
     "word": "lucht",
@@ -465,7 +465,7 @@
     "word": "gezellig",
     "definition_nl": "Met een warme, prettige en fijne sfeer.",
     "definition_en": "cozy / gezellig",
-    "example_nl": "Het was een gezellige avond."
+    "example_nl": "We zaten met kaarslicht en warme chocolademelk urenlang BLANK te praten."
   },
   {
     "word": "moeilijk",
@@ -495,7 +495,7 @@
     "word": "proberen",
     "definition_nl": "Een poging doen om iets te doen.",
     "definition_en": "to try",
-    "example_nl": "Probeer het woord nog eens."
+    "example_nl": "Ik ga het morgen opnieuw BLANK."
   },
   {
     "word": "luisteren",
