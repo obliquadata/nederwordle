@@ -1,39 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2804 180" preserveAspectRatio="none">
-  <rect width="2804" height="180" fill="#ffffff"/>
-
-  <!-- Blue base, kept very shallow to take up less vertical space -->
+<svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+  <!-- Blue base -->
   <path d="
-    M0 140
-    C260 154 520 151 780 140
-    C1040 129 1300 134 1560 144
-    C1820 154 2080 154 2340 146
-    C2520 140 2660 135 2804 132
-    L2804 180
-    L0 180
+    M0,80
+    C120,75 240,85 360,80
+    C480,75 600,85 720,80
+    C840,75 960,85 1080,80
+    C1200,75 1320,85 1440,80
+    L1440,120
+    L0,120
     Z"
-    fill="#144778"/>
+    fill="#1f4a7c"/>
 
-  <!-- White separation swoop -->
+  <!-- White stripe -->
   <path d="
-    M0 128
-    C260 142 520 139 780 128
-    C1040 117 1300 122 1560 132
-    C1820 142 2080 142 2340 134
-    C2520 128 2660 124 2804 121"
+    M0,70
+    C120,65 240,75 360,70
+    C480,65 600,75 720,70
+    C840,65 960,75 1080,70
+    C1200,65 1320,75 1440,70"
     fill="none"
     stroke="#ffffff"
-    stroke-width="10"
+    stroke-width="6"
     stroke-linecap="round"/>
 
-  <!-- Orange swoop -->
+  <!-- Orange stripe -->
   <path d="
-    M0 116
-    C260 132 520 129 780 117
-    C1040 105 1300 111 1560 121
-    C1820 131 2080 132 2340 124
-    C2520 118 2660 113 2804 110"
+    M0,60
+    C120,55 240,65 360,60
+    C480,55 600,65 720,60
+    C840,55 960,65 1080,60
+    C1200,55 1320,65 1440,60"
     fill="none"
-    stroke="#ff7a1a"
-    stroke-width="12"
+    stroke="#f47c20"
+    stroke-width="10"
     stroke-linecap="round"/>
 </svg>
