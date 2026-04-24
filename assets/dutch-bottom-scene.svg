@@ -1,37 +1,39 @@
-<svg viewBox="0 0 1440 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-  <!-- Blue base -->
-  <path d="
-    M0,210
-    C120,190 240,230 360,210
-    C480,190 600,230 720,210
-    C840,190 960,230 1080,210
-    C1200,190 1320,230 1440,210
-    L1440,300
-    L0,300
-    Z"
-    fill="#1f4a7c"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2804 561" preserveAspectRatio="none">
+  <rect width="2804" height="561" fill="#ffffff"/>
 
-  <!-- White stripe -->
+  <!-- Blue base, expanded to fill the bottom -->
   <path d="
-    M0,185
-    C120,165 240,205 360,185
-    C480,165 600,205 720,185
-    C840,165 960,205 1080,185
-    C1200,165 1320,205 1440,185"
+    M0 420
+    C260 465 520 455 780 420
+    C1040 385 1300 400 1560 430
+    C1820 460 2080 465 2340 438
+    C2520 420 2660 405 2804 397
+    L2804 561
+    L0 561
+    Z"
+    fill="#144778"/>
+
+  <!-- White separation swoop -->
+  <path d="
+    M0 392
+    C260 438 520 430 780 394
+    C1040 358 1300 374 1560 404
+    C1820 434 2080 438 2340 412
+    C2520 394 2660 382 2804 374"
     fill="none"
     stroke="#ffffff"
-    stroke-width="12"
+    stroke-width="32"
     stroke-linecap="round"/>
 
-  <!-- Orange stripe -->
+  <!-- Orange swoop -->
   <path d="
-    M0,160
-    C120,140 240,180 360,160
-    C480,140 600,180 720,160
-    C840,140 960,180 1080,160
-    C1200,140 1320,180 1440,160"
+    M0 358
+    C260 408 520 402 780 365
+    C1040 328 1300 344 1560 374
+    C1820 404 2080 408 2340 382
+    C2520 364 2660 350 2804 340"
     fill="none"
-    stroke="#f47c20"
-    stroke-width="20"
+    stroke="#ff7a1a"
+    stroke-width="34"
     stroke-linecap="round"/>
 </svg>
