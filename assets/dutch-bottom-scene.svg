@@ -1,29 +1,37 @@
 <svg viewBox="0 0 1440 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-  <!-- Blue base (fills entire bottom) -->
+  <!-- Blue base -->
   <path d="
-    M0,200 
-    C240,180 480,220 720,200 
-    C960,180 1200,220 1440,200 
-    L1440,300 
-    L0,300 
-    Z" 
+    M0,210
+    C120,190 240,230 360,210
+    C480,190 600,230 720,210
+    C840,190 960,230 1080,210
+    C1200,190 1320,230 1440,210
+    L1440,300
+    L0,300
+    Z"
     fill="#1f4a7c"/>
 
   <!-- White stripe -->
   <path d="
-    M0,180 
-    C240,160 480,200 720,180 
-    C960,160 1200,200 1440,180" 
-    fill="none" 
-    stroke="#ffffff" 
-    stroke-width="12"/>
+    M0,185
+    C120,165 240,205 360,185
+    C480,165 600,205 720,185
+    C840,165 960,205 1080,185
+    C1200,165 1320,205 1440,185"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="12"
+    stroke-linecap="round"/>
 
   <!-- Orange stripe -->
   <path d="
-    M0,160 
-    C240,140 480,180 720,160 
-    C960,140 1200,180 1440,160" 
-    fill="none" 
-    stroke="#f47c20" 
-    stroke-width="20"/>
+    M0,160
+    C120,140 240,180 360,160
+    C480,140 600,180 720,160
+    C840,140 960,180 1080,160
+    C1200,140 1320,180 1440,160"
+    fill="none"
+    stroke="#f47c20"
+    stroke-width="20"
+    stroke-linecap="round"/>
 </svg>
