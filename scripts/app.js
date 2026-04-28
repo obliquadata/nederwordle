@@ -338,6 +338,10 @@ function applyEndState(won) {
 
 function submitGuess(rawGuess) {
   if (state.gameOver) {
+    if (state.mode === "unlimited") {
+      startRound({ preserveDaily: false });
+      return;
+    }
     setMessage("Deze ronde is al afgelopen.");
     return;
   }
@@ -397,21 +401,12 @@ function updateShareButton() {
 
 async function shareResults() {
   const text = buildShareText();
-  try {
-    if (navigator.share) {
-      await navigator.share({ text });
-      setMessage("Resultaat gedeeld.");
-      return;
-    }
-  } catch (error) {
-    // Fall through to clipboard on cancel/error
-  }
 
   try {
     await navigator.clipboard.writeText(text);
-    setMessage("Resultaat gekopieerd naar je klembord.");
+    setMessage("Je resultaat is gekopieerd naar je klembord.");
   } catch (error) {
-    setMessage("Delen lukte niet automatisch.", true);
+    setMessage("Kopiëren naar je klembord lukte niet automatisch.", true);
   }
 }
 
