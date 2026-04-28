@@ -106,9 +106,19 @@ function scoreWord(word) {
   return score;
 }
 
+function inferDifficulty(word) {
+  if (word.length <= 5) return "A1";
+  if (word.length <= 7) return "A2";
+  if (word.length <= 8) return "B1";
+  if (word.length <= 10) return "B2";
+  if (word.endsWith("ing") || word.endsWith("heid") || word.endsWith("lijk")) return "C1";
+  return "C2";
+}
+
 function clueFor(word) {
   return {
     word,
+    difficulty: inferDifficulty(word),
     definition_nl: "Nederlandse omschrijving volgt later. Raad het woord op basis van de letters.",
     definition_en: "translation to be added",
     example_nl: "Voorbeeldzin volgt later met BLANK als vervanging."

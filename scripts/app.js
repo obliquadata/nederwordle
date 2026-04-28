@@ -1,6 +1,8 @@
 const MAX_ATTEMPTS = 6;
-const STORAGE_KEY = "NederWordle-state-v1";
+const STORAGE_KEY = "NederWordle-state-v2";
+const LEGACY_STORAGE_KEY = "NederWordle-state-v1";
 const STATS_KEY = "NederWordle-stats-v1";
+const DIFFICULTIES = ["A1", "A2", "B1", "B2", "C1", "C2"];
 
 const state = {
   words: [],
@@ -11,6 +13,7 @@ const state = {
   gameOver: false,
   won: false,
   dailyKey: null,
+  selectedDifficulty: "all",
 };
 
 const els = {
@@ -23,10 +26,13 @@ const els = {
   resultPanel: document.getElementById("resultPanel"),
   lengthPill: document.getElementById("lengthPill"),
   attemptsPill: document.getElementById("attemptsPill"),
+  difficultyPill: document.getElementById("difficultyPill"),
   shareBtn: document.getElementById("shareBtn"),
   dailyModeBtn: document.getElementById("dailyModeBtn"),
   unlimitedModeBtn: document.getElementById("unlimitedModeBtn"),
   newUnlimitedBtn: document.getElementById("newUnlimitedBtn"),
+  difficultyControl: document.getElementById("difficultyControl"),
+  difficultySelect: document.getElementById("difficultySelect"),
   modeTitle: document.getElementById("modeTitle"),
   statPlayed: document.getElementById("statPlayed"),
   statWon: document.getElementById("statWon"),
@@ -62,11 +68,19 @@ function getDailyWord(words, dateKey) {
   return words[idx];
 }
 
-function pickUnlimitedWord(words, previousWord = null) {
-  if (words.length <= 1) return words[0];
-  let picked = words[Math.floor(Math.random() * words.length)];
+function getDifficultyPool() {
+  if (state.selectedDifficulty === "all") return state.words;
+  return state.words.filter((word) => word.difficulty === state.selectedDifficulty);
+}
+
+function pickUnlimitedWord(previousWord = null) {
+  const pool = getDifficultyPool();
+  if (!pool.length) return null;
+  if (pool.length <= 1) return pool[0];
+
+  let picked = pool[Math.floor(Math.random() * pool.length)];
   while (previousWord && picked.word === previousWord.word) {
-    picked = words[Math.floor(Math.random() * words.length)];
+    picked = pool[Math.floor(Math.random() * pool.length)];
   }
   return picked;
 }
@@ -94,6 +108,7 @@ function renderStats() {
 function saveState() {
   const payload = {
     mode: state.mode,
+    selectedDifficulty: state.selectedDifficulty,
     currentWord: state.current?.word || null,
     guesses: state.guesses,
     evaluations: state.evaluations,
@@ -106,7 +121,7 @@ function saveState() {
 
 function loadState() {
   try {
-    return JSON.parse(localStorage.getItem(STORAGE_KEY)) || null;
+    return JSON.parse(localStorage.getItem(STORAGE_KEY)) || JSON.parse(localStorage.getItem(LEGACY_STORAGE_KEY)) || null;
   } catch {
     return null;
   }
@@ -136,10 +151,23 @@ function buildBoard() {
   }
 }
 
+function shouldShowExampleSentence() {
+  return state.gameOver || state.guesses.length > 0;
+}
+
 function renderClue() {
   els.definitionNl.textContent = state.current.definition_nl;
-  els.exampleNl.textContent = `Voorbeeldzin: ${state.current.example_nl}`;
+  if (shouldShowExampleSentence()) {
+    els.exampleNl.hidden = false;
+    els.exampleNl.textContent = `Voorbeeldzin: ${state.current.example_nl}`;
+  } else {
+    els.exampleNl.hidden = true;
+    els.exampleNl.textContent = "";
+  }
   els.lengthPill.textContent = `${state.current.word.length} letters`;
+  if (els.difficultyPill) {
+    els.difficultyPill.textContent = state.current.difficulty || "Alle niveaus";
+  }
 }
 
 function getRevealedExampleSentence() {
@@ -181,6 +209,7 @@ function renderMode() {
   els.dailyModeBtn.setAttribute("aria-pressed", String(daily));
   els.unlimitedModeBtn.setAttribute("aria-pressed", String(!daily));
   els.newUnlimitedBtn.hidden = daily;
+  if (els.difficultyControl) els.difficultyControl.hidden = daily;
   els.modeTitle.textContent = daily ? "Woord van vandaag" : "Onbeperkte modus";
 }
 
@@ -232,7 +261,12 @@ function startRound({ preserveDaily = true } = {}) {
   if (state.mode === "daily") {
     state.current = getDailyWord(state.words, today);
   } else {
-    state.current = pickUnlimitedWord(state.words, state.current);
+    state.current = pickUnlimitedWord(state.current);
+  }
+
+  if (!state.current) {
+    setMessage("Er zijn geen woorden beschikbaar voor dit niveau.", true);
+    return;
   }
 
   state.guesses = [];
@@ -296,6 +330,7 @@ function applyEndState(won) {
 
   setStats(stats);
   renderStats();
+  renderClue();
   renderResultPanel();
   updateShareButton();
   saveState();
@@ -315,12 +350,12 @@ function submitGuess(rawGuess) {
     return;
   }
 
-
   const evaluation = evaluateGuess(guess, answer);
   state.guesses.push(guess);
   state.evaluations.push(evaluation);
 
   buildBoard();
+  renderClue();
   updateShareButton();
   saveState();
 
@@ -331,14 +366,13 @@ function submitGuess(rawGuess) {
   }
 
   if (state.guesses.length >= MAX_ATTEMPTS) {
-    setMessage(`Helaas, "${state.current.word}" kaas. Het woord was "${state.current.word}".`);
+    setMessage(`Helaas, het woord was "${state.current.word}".`);
     applyEndState(false);
     return;
   }
 
   setMessage(`Nog ${MAX_ATTEMPTS - state.guesses.length} poging(en).`);
 }
-
 
 function buildShareText() {
   const rows = state.evaluations.map((evaluation) =>
@@ -350,7 +384,9 @@ function buildShareText() {
   );
 
   const score = state.won ? `${state.guesses.length}/${MAX_ATTEMPTS}` : `X/${MAX_ATTEMPTS}`;
-  const modeLabel = state.mode === "daily" ? `Dagelijks ${state.dailyKey}` : "Onbeperkt";
+  const modeLabel = state.mode === "daily"
+    ? `Dagelijks ${state.dailyKey}`
+    : `Onbeperkt ${state.selectedDifficulty === "all" ? "alle niveaus" : state.selectedDifficulty}`;
   return `NederWordle ${modeLabel} ${score}\n${rows.join("\n")}\n\nhttps://obliquadata.github.io/nederwordle`;
 }
 
@@ -385,11 +421,13 @@ async function init() {
 
   state.words = words
     .filter((w) => w.word && w.definition_nl && w.definition_en)
-    .map((w) => ({ ...w, word: normalizeDutch(w.word) }))
+    .map((w) => ({ ...w, word: normalizeDutch(w.word), difficulty: DIFFICULTIES.includes(w.difficulty) ? w.difficulty : "B1" }))
     .filter((w) => w.word.length >= 3 && w.word.length <= 12);
 
   const saved = loadState();
   state.mode = saved?.mode === "unlimited" ? "unlimited" : "daily";
+  state.selectedDifficulty = ["all", ...DIFFICULTIES].includes(saved?.selectedDifficulty) ? saved.selectedDifficulty : "all";
+  if (els.difficultySelect) els.difficultySelect.value = state.selectedDifficulty;
 
   startRound({ preserveDaily: true });
 
@@ -419,6 +457,16 @@ async function init() {
       startRound({ preserveDaily: false });
     }
   });
+
+  if (els.difficultySelect) {
+    els.difficultySelect.addEventListener("change", (event) => {
+      state.selectedDifficulty = event.target.value;
+      if (state.mode !== "unlimited") {
+        state.mode = "unlimited";
+      }
+      startRound({ preserveDaily: false });
+    });
+  }
 
   if (els.shareBtn) {
     els.shareBtn.addEventListener("click", () => {

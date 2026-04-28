@@ -88,6 +88,18 @@
           <button id="unlimitedModeBtn" class="mode-btn" type="button" aria-pressed="false">Onbeperkt</button>
         </div>
         <button id="newUnlimitedBtn" class="secondary-btn" type="button" hidden>Nieuw woord</button>
+        <label id="difficultyControl" class="difficulty-control" for="difficultySelect" hidden>
+          <span>Niveau</span>
+          <select id="difficultySelect" aria-label="Kies een moeilijkheidsniveau voor onbeperkte modus">
+            <option value="all">Alle niveaus</option>
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="B1">B1</option>
+            <option value="B2">B2</option>
+            <option value="C1">C1</option>
+            <option value="C2">C2</option>
+          </select>
+        </label>
       </div>
     </header>
 
@@ -99,6 +111,7 @@
         <p id="exampleNl" class="example"></p>
         <div class="meta-row">
           <span id="lengthPill" class="pill"></span>
+          <span id="difficultyPill" class="pill"></span>
           <span id="attemptsPill" class="pill">6 pogingen</span>
         </div>
       </section>
@@ -148,8 +161,9 @@
         <details class="howto">
           <summary>Hoe werkt het?</summary>
           <p>Je krijgt eerst een definitie in het Nederlands. Daarna probeer je het juiste woord te raden.</p>
+          <p>Na één verkeerde gok verschijnt ook een voorbeeldzin als extra hint.</p>
           <p>De lengte van het woord verandert per ronde. Dat maakt het spel flexibeler en bruikbaarder voor taalverwerving.</p>
-          <p>In de dagelijkse modus krijgt iedereen op dezelfde dag hetzelfde woord. In onbeperkte modus krijg je steeds een nieuw woord uit de woordbank.</p>
+          <p>In de dagelijkse modus krijgt iedereen op dezelfde dag hetzelfde woord uit alle niveaus. In onbeperkte modus kun je kiezen tussen alle niveaus, A1, A2, B1, B2, C1 en C2.</p>
           <p>Na een goed antwoord verschijnt de Engelse vertaling, plus de Nederlandse definitie en een voorbeeldzin.</p>
         </details>
       </aside>

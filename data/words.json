@@ -3,516 +3,826 @@
     "word": "huis",
     "definition_nl": "Een gebouw of plek waar mensen wonen.",
     "definition_en": "house",
-    "example_nl": "Ik ga na het werk naar BLANK."
+    "example_nl": "Ik ga na het werk naar BLANK.",
+    "difficulty": "A1"
   },
   {
     "word": "water",
     "definition_nl": "Doorzichtige vloeistof die mensen, dieren en planten nodig hebben.",
     "definition_en": "water",
-    "example_nl": "Ik drink elke ochtend een glas BLANK."
+    "example_nl": "Ik drink elke ochtend een glas BLANK.",
+    "difficulty": "A1"
   },
   {
     "word": "boek",
     "definition_nl": "Iets met bladzijden dat je kunt lezen.",
     "definition_en": "book",
-    "example_nl": "Dit BLANK is makkelijk te begrijpen."
+    "example_nl": "Dit BLANK is makkelijk te begrijpen.",
+    "difficulty": "A1"
   },
   {
     "word": "fiets",
     "definition_nl": "Voertuig met twee wielen dat je met pedalen beweegt.",
     "definition_en": "bicycle",
-    "example_nl": "In Nederland gaat veel verkeer per BLANK."
+    "example_nl": "In Nederland gaat veel verkeer per BLANK.",
+    "difficulty": "A1"
   },
   {
     "word": "school",
     "definition_nl": "Plaats waar je lessen volgt en leert.",
     "definition_en": "school",
-    "example_nl": "De kinderen zijn vandaag op BLANK."
+    "example_nl": "De kinderen zijn vandaag op BLANK.",
+    "difficulty": "A1"
   },
   {
     "word": "vriend",
     "definition_nl": "Iemand met wie je een goede band hebt.",
     "definition_en": "friend",
-    "example_nl": "Mijn BLANK woont in Utrecht."
+    "example_nl": "Mijn BLANK woont in Utrecht.",
+    "difficulty": "A1"
   },
   {
     "word": "familie",
     "definition_nl": "Groep mensen die aan elkaar verwant zijn.",
     "definition_en": "family",
-    "example_nl": "Mijn BLANK komt zondag op bezoek."
+    "example_nl": "Mijn BLANK komt zondag op bezoek.",
+    "difficulty": "A1"
   },
   {
     "word": "werken",
     "definition_nl": "Activiteiten doen voor een baan of taak.",
     "definition_en": "to work",
-    "example_nl": "Ik moet vandaag lang BLANK."
+    "example_nl": "Ik moet vandaag lang BLANK.",
+    "difficulty": "A1"
   },
   {
     "word": "eten",
     "definition_nl": "Voedsel in je mond nemen en doorslikken.",
     "definition_en": "to eat",
-    "example_nl": "We gaan straks samen BLANK."
+    "example_nl": "We gaan straks samen BLANK.",
+    "difficulty": "A1"
   },
   {
     "word": "drinken",
     "definition_nl": "Vloeistof innemen via de mond.",
     "definition_en": "to drink",
-    "example_nl": "Hij wil graag koffie BLANK."
+    "example_nl": "Hij wil graag koffie BLANK.",
+    "difficulty": "A1"
   },
   {
     "word": "lopen",
     "definition_nl": "Zich te voet verplaatsen.",
     "definition_en": "to walk",
-    "example_nl": "Wij BLANK naar het station."
+    "example_nl": "Wij BLANK naar het station.",
+    "difficulty": "A1"
   },
   {
     "word": "straat",
     "definition_nl": "Weg in een dorp of stad met huizen eraan.",
     "definition_en": "street",
-    "example_nl": "Onze BLANK is erg rustig."
+    "example_nl": "Onze BLANK is erg rustig.",
+    "difficulty": "A1"
   },
   {
     "word": "winkel",
     "definition_nl": "Plaats waar je dingen kunt kopen.",
     "definition_en": "shop",
-    "example_nl": "Die BLANK verkoopt goede kaas."
+    "example_nl": "Die BLANK verkoopt goede kaas.",
+    "difficulty": "A1"
   },
   {
     "word": "markt",
     "definition_nl": "Plek waar verkopers hun producten aanbieden.",
     "definition_en": "market",
-    "example_nl": "Op de BLANK koop ik groente."
+    "example_nl": "Op de BLANK koop ik groente.",
+    "difficulty": "A1"
   },
   {
     "word": "brood",
     "definition_nl": "Basisvoedsel dat vaak van meel wordt gemaakt.",
     "definition_en": "bread",
-    "example_nl": "Ik eet BLANK met kaas."
+    "example_nl": "Ik eet BLANK met kaas.",
+    "difficulty": "A1"
   },
   {
     "word": "kaas",
     "definition_nl": "Zuivelproduct dat vaak op brood wordt gegeten.",
     "definition_en": "cheese",
-    "example_nl": "Nederland staat bekend om BLANK."
+    "example_nl": "Nederland staat bekend om BLANK.",
+    "difficulty": "A1"
   },
   {
     "word": "appel",
     "definition_nl": "Ronde vrucht die vaak rood, groen of geel is.",
     "definition_en": "apple",
-    "example_nl": "Een BLANK is een gezonde snack."
+    "example_nl": "Een BLANK is een gezonde snack.",
+    "difficulty": "A1"
   },
   {
     "word": "kamer",
     "definition_nl": "Afgesloten ruimte in een huis of gebouw.",
     "definition_en": "room",
-    "example_nl": "Mijn BLANK is klein maar licht."
+    "example_nl": "Mijn BLANK is klein maar licht.",
+    "difficulty": "A1"
   },
   {
     "word": "tafel",
     "definition_nl": "Meubel met een blad en poten.",
     "definition_en": "table",
-    "example_nl": "Het boek ligt op de BLANK."
+    "example_nl": "Het boek ligt op de BLANK.",
+    "difficulty": "A1"
   },
   {
     "word": "stoel",
     "definition_nl": "Meubel waarop één persoon kan zitten.",
     "definition_en": "chair",
-    "example_nl": "Zet de BLANK bij het raam."
+    "example_nl": "Zet de BLANK bij het raam.",
+    "difficulty": "A1"
   },
   {
     "word": "raam",
     "definition_nl": "Opening in een muur met glas erin.",
     "definition_en": "window",
-    "example_nl": "Doe het BLANK even open."
+    "example_nl": "Doe het BLANK even open.",
+    "difficulty": "A1"
   },
   {
     "word": "deur",
     "definition_nl": "Beweegbaar deel waardoor je een ruimte in of uit gaat.",
     "definition_en": "door",
-    "example_nl": "De BLANK staat nog open."
+    "example_nl": "De BLANK staat nog open.",
+    "difficulty": "A1"
   },
   {
     "word": "licht",
     "definition_nl": "Wat je nodig hebt om goed te kunnen zien.",
     "definition_en": "light",
-    "example_nl": "Het BLANK in de keuken is aan."
+    "example_nl": "Het BLANK in de keuken is aan.",
+    "difficulty": "A1"
   },
   {
     "word": "donker",
     "definition_nl": "Met weinig of geen licht.",
     "definition_en": "dark",
-    "example_nl": "In de winter is het vroeg BLANK."
+    "example_nl": "In de winter is het vroeg BLANK.",
+    "difficulty": "A1"
   },
   {
     "word": "groot",
     "definition_nl": "Met veel omvang of formaat.",
     "definition_en": "big",
-    "example_nl": "De verdwijning van Amelia Earhart is een BLANK mysterie."
+    "example_nl": "De verdwijning van Amelia Earhart is een BLANK mysterie.",
+    "difficulty": "A1"
   },
   {
     "word": "klein",
     "definition_nl": "Met weinig omvang of formaat.",
     "definition_en": "small",
-    "example_nl": "Dat kopje is te BLANK."
+    "example_nl": "Dat kopje is te BLANK.",
+    "difficulty": "A1"
   },
   {
     "word": "nieuw",
     "definition_nl": "Pas gemaakt, gekocht of begonnen.",
     "definition_en": "new",
-    "example_nl": "Dit is een BLANK hoofdstuk."
+    "example_nl": "Dit is een BLANK hoofdstuk.",
+    "difficulty": "A1"
   },
   {
     "word": "oud",
     "definition_nl": "Niet nieuw; al lang bestaand of gebruikt.",
     "definition_en": "old",
-    "example_nl": "Mijn fiets is al BLANK."
+    "example_nl": "Mijn fiets is al BLANK.",
+    "difficulty": "A1"
   },
   {
     "word": "mooi",
     "definition_nl": "Prettig om te zien of te ervaren.",
     "definition_en": "beautiful",
-    "example_nl": "Wat een BLANK uitzicht."
+    "example_nl": "Wat een BLANK uitzicht.",
+    "difficulty": "A1"
   },
   {
     "word": "snel",
     "definition_nl": "Met hoge snelheid of in korte tijd.",
     "definition_en": "fast",
-    "example_nl": "De trein is vandaag BLANK."
+    "example_nl": "De trein is vandaag BLANK.",
+    "difficulty": "A1"
   },
   {
     "word": "langzaam",
     "definition_nl": "Niet snel; met weinig snelheid.",
     "definition_en": "slow",
-    "example_nl": "Hij loopt wat BLANK."
+    "example_nl": "Hij loopt wat BLANK.",
+    "difficulty": "A2"
   },
   {
     "word": "vroeg",
     "definition_nl": "Op een tijdstip dat niet laat is.",
     "definition_en": "early",
-    "example_nl": "Ik stond vanmorgen BLANK op."
+    "example_nl": "Ik stond vanmorgen BLANK op.",
+    "difficulty": "A1"
   },
   {
     "word": "avond",
     "definition_nl": "Deel van de dag na de middag en voor de nacht.",
     "definition_en": "evening",
-    "example_nl": "De BLANK is rustig en stil."
+    "example_nl": "De BLANK is rustig en stil.",
+    "difficulty": "A1"
   },
   {
     "word": "morgen",
     "definition_nl": "De dag na vandaag, of het begin van de dag.",
     "definition_en": "tomorrow / morning",
-    "example_nl": "BLANK heb ik college."
+    "example_nl": "BLANK heb ik college.",
+    "difficulty": "A1"
   },
   {
     "word": "vandaag",
     "definition_nl": "Op deze dag; nu.",
     "definition_en": "today",
-    "example_nl": "BLANK is het zonnig."
+    "example_nl": "BLANK is het zonnig.",
+    "difficulty": "A1"
   },
   {
     "word": "tijd",
     "definition_nl": "Manier om duur of een moment aan te geven.",
     "definition_en": "time",
-    "example_nl": "Heb je BLANK om te praten?"
+    "example_nl": "Heb je BLANK om te praten?",
+    "difficulty": "A1"
   },
   {
     "word": "uur",
     "definition_nl": "Periode van zestig minuten.",
     "definition_en": "hour",
-    "example_nl": "De vergadering duurt een BLANK."
+    "example_nl": "De vergadering duurt een BLANK.",
+    "difficulty": "A1"
   },
   {
     "word": "week",
     "definition_nl": "Periode van zeven dagen.",
     "definition_en": "week",
-    "example_nl": "Volgende BLANK ben ik vrij."
+    "example_nl": "Volgende BLANK ben ik vrij.",
+    "difficulty": "A1"
   },
   {
     "word": "jaar",
     "definition_nl": "Periode van twaalf maanden.",
     "definition_en": "year",
-    "example_nl": "Dit BLANK wil ik beter Nederlands leren."
+    "example_nl": "Dit BLANK wil ik beter Nederlands leren.",
+    "difficulty": "A1"
   },
   {
     "word": "zomer",
     "definition_nl": "Warm seizoen tussen lente en herfst.",
     "definition_en": "summer",
-    "example_nl": "In de BLANK ga ik graag zwemmen."
+    "example_nl": "In de BLANK ga ik graag zwemmen.",
+    "difficulty": "A2"
   },
   {
     "word": "winter",
     "definition_nl": "Koud seizoen van het jaar.",
     "definition_en": "winter",
-    "example_nl": "In de BLANK draag ik een dikke jas."
+    "example_nl": "In de BLANK draag ik een dikke jas.",
+    "difficulty": "A2"
   },
   {
     "word": "regen",
     "definition_nl": "Water dat uit de wolken naar beneden valt.",
     "definition_en": "rain",
-    "example_nl": "Door de BLANK neem ik de tram."
+    "example_nl": "Door de BLANK neem ik de tram.",
+    "difficulty": "A2"
   },
   {
     "word": "zon",
     "definition_nl": "Ster die licht en warmte aan de aarde geeft.",
     "definition_en": "sun",
-    "example_nl": "De BLANK schijnt vandaag fel."
+    "example_nl": "De BLANK schijnt vandaag fel.",
+    "difficulty": "A1"
   },
   {
     "word": "wind",
     "definition_nl": "Beweging van lucht buiten.",
     "definition_en": "wind",
-    "example_nl": "Er staat veel BLANK aan zee."
+    "example_nl": "Er staat veel BLANK aan zee.",
+    "difficulty": "A2"
   },
   {
     "word": "vraag",
     "definition_nl": "Iets wat je zegt om informatie te krijgen.",
     "definition_en": "question",
-    "example_nl": "Dat is een goede BLANK."
+    "example_nl": "Dat is een goede BLANK.",
+    "difficulty": "A2"
   },
   {
     "word": "antwoord",
     "definition_nl": "Reactie op een vraag.",
     "definition_en": "answer",
-    "example_nl": "Ik weet het BLANK niet."
+    "example_nl": "Ik weet het BLANK niet.",
+    "difficulty": "A2"
   },
   {
     "word": "taal",
     "definition_nl": "Systeem van woorden en regels om te communiceren.",
     "definition_en": "language",
-    "example_nl": "Nederlands is een mooie BLANK."
+    "example_nl": "Nederlands is een mooie BLANK.",
+    "difficulty": "A2"
   },
   {
     "word": "woord",
     "definition_nl": "Kleinste zelfstandige eenheid van taal.",
     "definition_en": "word",
-    "example_nl": "Dat BLANK hoor je vaak."
+    "example_nl": "Dat BLANK hoor je vaak.",
+    "difficulty": "A2"
   },
   {
     "word": "zin",
     "definition_nl": "Groep woorden die samen iets uitdrukken.",
     "definition_en": "sentence",
-    "example_nl": "Schrijf een BLANK met dit woord."
+    "example_nl": "Schrijf een BLANK met dit woord.",
+    "difficulty": "A2"
   },
   {
     "word": "denken",
     "definition_nl": "Je hoofd gebruiken om ideeën of meningen te vormen.",
     "definition_en": "to think",
-    "example_nl": "Ik moet daar nog over BLANK."
+    "example_nl": "Ik moet daar nog over BLANK.",
+    "difficulty": "A2"
   },
   {
     "word": "leren",
     "definition_nl": "Kennis of vaardigheden opdoen.",
     "definition_en": "to learn",
-    "example_nl": "Ik wil elke dag nieuwe woorden BLANK."
+    "example_nl": "Ik wil elke dag nieuwe woorden BLANK.",
+    "difficulty": "A2"
   },
   {
     "word": "praten",
     "definition_nl": "Woorden gebruiken om met iemand te spreken.",
     "definition_en": "to talk",
-    "example_nl": "We BLANK Nederlands in de les."
+    "example_nl": "We BLANK Nederlands in de les.",
+    "difficulty": "A2"
   },
   {
     "word": "schrijven",
     "definition_nl": "Taal opschrijven met pen, potlood of toetsenbord.",
     "definition_en": "to write",
-    "example_nl": "Kun je je naam BLANK?"
+    "example_nl": "Kun je je naam BLANK?",
+    "difficulty": "A2"
   },
   {
     "word": "lezen",
     "definition_nl": "Geschreven tekst begrijpen met je ogen.",
     "definition_en": "to read",
-    "example_nl": "Ik wil vanavond een boek BLANK."
+    "example_nl": "Ik wil vanavond een boek BLANK.",
+    "difficulty": "A2"
   },
   {
     "word": "kijken",
     "definition_nl": "Je ogen ergens op richten om iets te zien.",
     "definition_en": "to look",
-    "example_nl": "We willen vanavond met Cineville een film BLANK."
+    "example_nl": "We willen vanavond met Cineville een film BLANK.",
+    "difficulty": "A2"
   },
   {
     "word": "horen",
     "definition_nl": "Geluid met je oren waarnemen.",
     "definition_en": "to hear",
-    "example_nl": "Je kunt elke eerste maandag van de maand om twaalf uur de sirene BLANK."
+    "example_nl": "Je kunt elke eerste maandag van de maand om twaalf uur de sirene BLANK.",
+    "difficulty": "A2"
   },
   {
     "word": "maken",
     "definition_nl": "Iets creëren of produceren.",
     "definition_en": "to make",
-    "example_nl": "We BLANK vanavond soep."
+    "example_nl": "We BLANK vanavond soep.",
+    "difficulty": "A2"
   },
   {
     "word": "geven",
     "definition_nl": "Iets aan iemand overhandigen.",
     "definition_en": "to give",
-    "example_nl": "Kun je mij het zout BLANK?"
+    "example_nl": "Kun je mij het zout BLANK?",
+    "difficulty": "A2"
   },
   {
     "word": "meenemen",
     "definition_nl": "Iets pakken of ontvangen.",
     "definition_en": "to take",
-    "example_nl": "Je moet je paspoort BLANK."
+    "example_nl": "Je moet je paspoort BLANK.",
+    "difficulty": "A2"
   },
   {
     "word": "komen",
     "definition_nl": "Zich naar een plaats toe bewegen.",
     "definition_en": "to come",
-    "example_nl": "We willen vanavond allemaal naar mijn verjaardag BLANK."
+    "example_nl": "We willen vanavond allemaal naar mijn verjaardag BLANK.",
+    "difficulty": "A2"
   },
   {
     "word": "gaan",
     "definition_nl": "Zich van een plaats verwijderen of verplaatsen.",
     "definition_en": "to go",
-    "example_nl": "We BLANK straks naar buiten."
+    "example_nl": "We BLANK straks naar buiten.",
+    "difficulty": "A2"
   },
   {
     "word": "blijf",
     "definition_nl": "Niet weggaan; op dezelfde plek of in dezelfde toestand zijn.",
     "definition_en": "to stay",
-    "example_nl": "Welkom in Europa, BLANK hier tot ik dood ga"
+    "example_nl": "Welkom in Europa, BLANK hier tot ik dood ga",
+    "difficulty": "A2"
   },
   {
     "word": "begin",
     "definition_nl": "Het eerste deel of startpunt van iets.",
     "definition_en": "beginning",
-    "example_nl": "Aan het BLANK is het vaak moeilijk."
+    "example_nl": "Aan het BLANK is het vaak moeilijk.",
+    "difficulty": "A2"
   },
   {
     "word": "einde",
     "definition_nl": "Het laatste deel of afsluiting van iets.",
     "definition_en": "end",
-    "example_nl": "Aan het BLANK begrijp je het beter."
+    "example_nl": "Aan het BLANK begrijp je het beter.",
+    "difficulty": "A2"
   },
   {
     "word": "mensen",
     "definition_nl": "Meer dan één persoon.",
     "definition_en": "people",
-    "example_nl": "Er zijn veel BLANK op straat."
+    "example_nl": "Er zijn veel BLANK op straat.",
+    "difficulty": "A2"
   },
   {
     "word": "kind",
     "definition_nl": "Jonge persoon.",
     "definition_en": "child",
-    "example_nl": "Het BLANK speelt in de tuin."
+    "example_nl": "Het BLANK speelt in de tuin.",
+    "difficulty": "A1"
   },
   {
     "word": "vrouw",
     "definition_nl": "Volwassen persoon, doorgaans geassocieerd met feminiene kenmerken.",
     "definition_en": "woman",
-    "example_nl": "Die BLANK werkt hier."
+    "example_nl": "Die BLANK werkt hier.",
+    "difficulty": "A1"
   },
   {
     "word": "man",
     "definition_nl": "Volwassen persoon van het mannelijke geslacht.",
     "definition_en": "man",
-    "example_nl": "De BLANK wacht op de bus."
+    "example_nl": "De BLANK wacht op de bus.",
+    "difficulty": "A1"
   },
   {
     "word": "stad",
     "definition_nl": "Grote plaats waar veel mensen wonen.",
     "definition_en": "city",
-    "example_nl": "Den Haag is een mooie BLANK."
+    "example_nl": "Den Haag is een mooie BLANK.",
+    "difficulty": "A2"
   },
   {
     "word": "dorp",
     "definition_nl": "Kleinere woonplaats dan een stad.",
     "definition_en": "village",
-    "example_nl": "Mijn opa woont in een BLANK."
+    "example_nl": "Mijn opa woont in een BLANK.",
+    "difficulty": "A2"
   },
   {
     "word": "land",
     "definition_nl": "Gebied met eigen grenzen en bestuur.",
     "definition_en": "country",
-    "example_nl": "Nederland is een klein BLANK."
+    "example_nl": "Nederland is een klein BLANK.",
+    "difficulty": "A1"
   },
   {
     "word": "zee",
     "definition_nl": "Grote hoeveelheid zout water.",
     "definition_en": "sea",
-    "example_nl": "De NoordBLANK ligt dicht bij Den Haag."
+    "example_nl": "De NoordBLANK ligt dicht bij Den Haag.",
+    "difficulty": "A1"
   },
   {
     "word": "lucht",
     "definition_nl": "De onzichtbare massa van gassen om ons heen.",
     "definition_en": "air",
-    "example_nl": "De BLANK is vandaag fris."
+    "example_nl": "De BLANK is vandaag fris.",
+    "difficulty": "A2"
   },
   {
     "word": "tuin",
     "definition_nl": "Stuk grond bij een huis met planten of gras.",
     "definition_en": "garden",
-    "example_nl": "In de BLANK groeien bloemen."
+    "example_nl": "In de BLANK groeien bloemen.",
+    "difficulty": "A2"
   },
   {
     "word": "bloem",
     "definition_nl": "Kleurrijk deel van een plant.",
     "definition_en": "flower",
-    "example_nl": "Deze BLANK ruikt lekker."
+    "example_nl": "Deze BLANK ruikt lekker.",
+    "difficulty": "A2"
   },
   {
     "word": "boom",
     "definition_nl": "Hoge plant met stam en takken.",
     "definition_en": "tree",
-    "example_nl": "Die BLANK is erg oud."
+    "example_nl": "Die BLANK is erg oud.",
+    "difficulty": "A2"
   },
   {
     "word": "straattaal",
     "definition_nl": "Informele taal die vaak in jongerencultuur wordt gebruikt.",
     "definition_en": "street language / slang",
-    "example_nl": "BLANK verandert snel."
+    "example_nl": "BLANK verandert snel.",
+    "difficulty": "B2"
   },
   {
     "word": "gezellig",
     "definition_nl": "Met een warme, prettige en fijne sfeer.",
     "definition_en": "cozy / gezellig",
-    "example_nl": "We zaten met kaarslicht en warme chocolademelk urenlang BLANK te praten."
+    "example_nl": "We zaten met kaarslicht en warme chocolademelk urenlang BLANK te praten.",
+    "difficulty": "B1"
   },
   {
     "word": "moeilijk",
     "definition_nl": "Niet makkelijk; lastig om te doen of begrijpen.",
     "definition_en": "difficult",
-    "example_nl": "Deze grammatica is BLANK."
+    "example_nl": "Deze grammatica is BLANK.",
+    "difficulty": "B1"
   },
   {
     "word": "makkelijk",
     "definition_nl": "Niet moeilijk; eenvoudig.",
     "definition_en": "easy",
-    "example_nl": "Dit woord is BLANK te onthouden."
+    "example_nl": "Dit woord is BLANK te onthouden.",
+    "difficulty": "A2"
   },
   {
     "word": "belangrijk",
     "definition_nl": "Van grote waarde of betekenis.",
     "definition_en": "important",
-    "example_nl": "Uitspraak is BLANK bij het leren van een taal."
+    "example_nl": "Uitspraak is BLANK bij het leren van een taal.",
+    "difficulty": "B1"
   },
   {
     "word": "begrijpen",
     "definition_nl": "De betekenis van iets snappen.",
     "definition_en": "to understand",
-    "example_nl": "Ik begin de uitleg te BLANK."
+    "example_nl": "Ik begin de uitleg te BLANK.",
+    "difficulty": "B1"
   },
   {
     "word": "proberen",
     "definition_nl": "Een poging doen om iets te doen.",
     "definition_en": "to try",
-    "example_nl": "Ik ga het morgen opnieuw BLANK."
+    "example_nl": "Ik ga het morgen opnieuw BLANK.",
+    "difficulty": "B1"
   },
   {
     "word": "luisteren",
     "definition_nl": "Bewust aandacht geven aan geluid of wat iemand zegt.",
     "definition_en": "to listen",
-    "example_nl": "BLANK helpt bij taalverwerving."
+    "example_nl": "BLANK helpt bij taalverwerving.",
+    "difficulty": "B1"
   },
   {
     "word": "gesprek",
     "definition_nl": "Mondelinge uitwisseling van woorden tussen mensen.",
     "definition_en": "conversation",
-    "example_nl": "We hadden een kort BLANK in het Nederlands."
+    "example_nl": "We hadden een kort BLANK in het Nederlands.",
+    "difficulty": "B1"
   },
   {
     "word": "oefenen",
     "definition_nl": "Iets herhalen om er beter in te worden.",
     "definition_en": "to practice",
-    "example_nl": "Je moet elke dag BLANK."
+    "example_nl": "Je moet elke dag BLANK.",
+    "difficulty": "B1"
+  },
+  {
+    "word": "onderzoek",
+    "difficulty": "B2",
+    "definition_nl": "Een systematische manier om iets te bestuderen en beter te begrijpen.",
+    "definition_en": "research",
+    "example_nl": "Het BLANK laat zien hoe mensen taal leren."
+  },
+  {
+    "word": "overheid",
+    "difficulty": "B2",
+    "definition_nl": "De organisatie die een land, provincie of gemeente bestuurt.",
+    "definition_en": "government",
+    "example_nl": "De BLANK maakt nieuwe regels voor het verkeer."
+  },
+  {
+    "word": "samenleving",
+    "difficulty": "B2",
+    "definition_nl": "Alle mensen die samen in een land of gebied leven.",
+    "definition_en": "society",
+    "example_nl": "Onderwijs is belangrijk voor de hele BLANK."
+  },
+  {
+    "word": "beslissing",
+    "difficulty": "B2",
+    "definition_nl": "Een keuze die iemand maakt na te hebben nagedacht.",
+    "definition_en": "decision",
+    "example_nl": "Die BLANK had grote gevolgen voor het project."
+  },
+  {
+    "word": "aanleiding",
+    "difficulty": "B2",
+    "definition_nl": "De reden waarom iets begint of gebeurt.",
+    "definition_en": "reason / trigger",
+    "example_nl": "Een klacht was de BLANK voor het gesprek."
+  },
+  {
+    "word": "toestand",
+    "difficulty": "B2",
+    "definition_nl": "De situatie waarin iets of iemand zich bevindt.",
+    "definition_en": "condition / situation",
+    "example_nl": "De BLANK van het gebouw is slecht."
+  },
+  {
+    "word": "verband",
+    "difficulty": "B2",
+    "definition_nl": "Een relatie of samenhang tussen twee of meer dingen.",
+    "definition_en": "connection / relation",
+    "example_nl": "Er is een duidelijk BLANK tussen slaap en concentratie."
+  },
+  {
+    "word": "oorzaak",
+    "difficulty": "B2",
+    "definition_nl": "Datgene waardoor iets gebeurt.",
+    "definition_en": "cause",
+    "example_nl": "De BLANK van het probleem was moeilijk te vinden."
+  },
+  {
+    "word": "gevolg",
+    "difficulty": "B2",
+    "definition_nl": "Iets dat gebeurt door iets anders.",
+    "definition_en": "consequence",
+    "example_nl": "Een mogelijk BLANK is dat de trein later komt."
+  },
+  {
+    "word": "invloed",
+    "difficulty": "B2",
+    "definition_nl": "Het effect dat iemand of iets op iets anders heeft.",
+    "definition_en": "influence",
+    "example_nl": "Het weer heeft veel BLANK op de reis."
+  },
+  {
+    "word": "bedoeling",
+    "difficulty": "B2",
+    "definition_nl": "Wat iemand wil bereiken met een actie of uitspraak.",
+    "definition_en": "intention",
+    "example_nl": "Dat was niet mijn BLANK."
+  },
+  {
+    "word": "afspraak",
+    "difficulty": "B2",
+    "definition_nl": "Iets wat mensen samen hebben gepland of afgesproken.",
+    "definition_en": "appointment / agreement",
+    "example_nl": "Ik heb morgen een BLANK bij de gemeente."
+  },
+  {
+    "word": "samenhang",
+    "difficulty": "C1",
+    "definition_nl": "De manier waarop verschillende onderdelen met elkaar verbonden zijn.",
+    "definition_en": "coherence / interconnection",
+    "example_nl": "De BLANK tussen de hoofdstukken is duidelijk."
+  },
+  {
+    "word": "vooroordeel",
+    "difficulty": "C1",
+    "definition_nl": "Een mening over iemand of iets voordat je genoeg weet.",
+    "definition_en": "prejudice / bias",
+    "example_nl": "Een BLANK kan eerlijk onderzoek moeilijker maken."
+  },
+  {
+    "word": "aannemelijk",
+    "difficulty": "C1",
+    "definition_nl": "Geloofwaardig of waarschijnlijk op basis van wat bekend is.",
+    "definition_en": "plausible",
+    "example_nl": "Die verklaring klinkt BLANK."
+  },
+  {
+    "word": "zorgvuldig",
+    "difficulty": "C1",
+    "definition_nl": "Met veel aandacht en zonder slordigheid gedaan.",
+    "definition_en": "careful / thorough",
+    "example_nl": "Lees de instructies BLANK voordat je begint."
+  },
+  {
+    "word": "geleidelijk",
+    "difficulty": "C1",
+    "definition_nl": "Stap voor stap, zonder plotselinge verandering.",
+    "definition_en": "gradual",
+    "example_nl": "De temperatuur stijgt BLANK."
+  },
+  {
+    "word": "weerleggen",
+    "difficulty": "C1",
+    "definition_nl": "Laten zien dat een uitspraak of argument niet klopt.",
+    "definition_en": "to refute",
+    "example_nl": "De onderzoeker probeerde de kritiek te BLANK."
+  },
+  {
+    "word": "benadrukken",
+    "difficulty": "C1",
+    "definition_nl": "Duidelijk maken dat iets extra belangrijk is.",
+    "definition_en": "to emphasize",
+    "example_nl": "De docent wil dit punt BLANK."
+  },
+  {
+    "word": "handhaven",
+    "difficulty": "C1",
+    "definition_nl": "Zorgen dat een regel blijft gelden of wordt nageleefd.",
+    "definition_en": "to enforce / maintain",
+    "example_nl": "De gemeente moet de regels BLANK."
+  },
+  {
+    "word": "tekortkoming",
+    "difficulty": "C1",
+    "definition_nl": "Een zwak punt of iets dat ontbreekt.",
+    "definition_en": "shortcoming",
+    "example_nl": "Een BLANK van het plan is de hoge kostprijs."
+  },
+  {
+    "word": "tegenstelling",
+    "difficulty": "C1",
+    "definition_nl": "Een duidelijk verschil of conflict tussen twee dingen.",
+    "definition_en": "contrast / opposition",
+    "example_nl": "Er is een BLANK tussen theorie en praktijk."
+  },
+  {
+    "word": "weerbarstig",
+    "difficulty": "C2",
+    "definition_nl": "Moeilijk te sturen, op te lossen of onder controle te krijgen.",
+    "definition_en": "unruly / intractable",
+    "example_nl": "Het bleek een BLANK probleem."
+  },
+  {
+    "word": "onvermijdelijk",
+    "difficulty": "C2",
+    "definition_nl": "Niet te voorkomen; iets dat zeker zal gebeuren.",
+    "definition_en": "inevitable",
+    "example_nl": "Een vertraging leek BLANK."
+  },
+  {
+    "word": "onderbouwing",
+    "difficulty": "C2",
+    "definition_nl": "Argumenten of bewijs die een bewering ondersteunen.",
+    "definition_en": "substantiation",
+    "example_nl": "De BLANK van die conclusie is sterk."
+  },
+  {
+    "word": "rechtvaardig",
+    "difficulty": "C2",
+    "definition_nl": "Eerlijk en moreel juist.",
+    "definition_en": "just / equitable",
+    "example_nl": "Iedereen wil een BLANK besluit."
+  },
+  {
+    "word": "grondslag",
+    "difficulty": "C2",
+    "definition_nl": "De basis waarop iets is gebouwd of gebaseerd.",
+    "definition_en": "foundation / basis",
+    "example_nl": "Vertrouwen vormt de BLANK van samenwerking."
+  },
+  {
+    "word": "draagvlak",
+    "difficulty": "C2",
+    "definition_nl": "Steun van mensen of groepen voor een plan of beslissing.",
+    "definition_en": "public support / buy-in",
+    "example_nl": "Zonder BLANK wordt het beleid moeilijk uitvoerbaar."
+  },
+  {
+    "word": "knelpunt",
+    "difficulty": "C2",
+    "definition_nl": "Een probleem dat vooruitgang belemmert.",
+    "definition_en": "bottleneck",
+    "example_nl": "Financiering blijft het grootste BLANK."
+  },
+  {
+    "word": "veerkracht",
+    "difficulty": "C2",
+    "definition_nl": "Het vermogen om na tegenslag te herstellen.",
+    "definition_en": "resilience",
+    "example_nl": "De stad toont veel BLANK na de storm."
+  },
+  {
+    "word": "ontwrichting",
+    "difficulty": "C2",
+    "definition_nl": "Een ernstige verstoring waardoor iets niet meer normaal werkt.",
+    "definition_en": "disruption",
+    "example_nl": "De staking veroorzaakte BLANK in het openbaar vervoer."
+  },
+  {
+    "word": "weloverwogen",
+    "difficulty": "C2",
+    "definition_nl": "Na zorgvuldige afweging gekozen of gedaan.",
+    "definition_en": "well-considered",
+    "example_nl": "Het was een BLANK keuze."
   }
 ]
