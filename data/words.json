@@ -36,7 +36,7 @@
     "example_nl": "In Nederland gaat veel verkeer per BLANK.",
     "difficulty": "A1",
     "word_en": "bicycle",
-    "example_en_literal": "In Netherlands goes much traffic by BLANK.",
+    "example_en_literal": "In the Netherlands, a lot of traffic goes by BLANK.",
     "definition_en_literal": "Vehicle with two wheels that you with pedals moves."
   },
   {
@@ -287,7 +287,7 @@
     "difficulty": "A1",
     "word_en": "beautiful",
     "example_en_literal": "What a BLANK view.",
-    "definition_en_literal": "Pleasant to to see or to experience."
+    "definition_en_literal": "Pleasant to see or experience."
   },
   {
     "word": "snel",
@@ -356,8 +356,8 @@
     "example_nl": "Heb je BLANK om te praten?",
     "difficulty": "A1",
     "word_en": "time",
-    "example_en_literal": "Have you BLANK to to talk?",
-    "definition_en_literal": "Way to duration or a moment to to give."
+    "example_en_literal": "Do you have BLANK to talk?",
+    "definition_en_literal": "A way to indicate duration or a moment."
   },
   {
     "word": "uur",
@@ -467,7 +467,7 @@
     "difficulty": "A2",
     "word_en": "language",
     "example_en_literal": "Dutch is a beautiful BLANK.",
-    "definition_en_literal": "System of words and rules to to communicate."
+    "definition_en_literal": "A system of words and rules used to communicate."
   },
   {
     "word": "woord",
@@ -526,8 +526,8 @@
     "example_nl": "Kun je je naam BLANK?",
     "difficulty": "A2",
     "word_en": "to write",
-    "example_en_literal": "Can you you name BLANK?",
-    "definition_en_literal": "Language write down with pen, pencil or keyboard."
+    "example_en_literal": "Can you BLANK your name?",
+    "definition_en_literal": "To put language down with pen, pencil, or keyboard."
   },
   {
     "word": "lezen",
@@ -767,7 +767,7 @@
     "difficulty": "B2",
     "word_en": "street language / slang",
     "example_en_literal": "BLANK changes fast.",
-    "definition_en_literal": "Informal language that often in youth culture becomes used."
+    "definition_en_literal": "Informal speech often used in youth culture."
   },
   {
     "word": "gezellig",
@@ -787,7 +787,7 @@
     "difficulty": "B1",
     "word_en": "difficult",
     "example_en_literal": "This grammar is BLANK.",
-    "definition_en_literal": "Not easy; difficult to to do or understand."
+    "definition_en_literal": "Not easy; hard to do or grasp."
   },
   {
     "word": "makkelijk",
@@ -816,8 +816,8 @@
     "example_nl": "Ik begin de uitleg te BLANK.",
     "difficulty": "B1",
     "word_en": "to understand",
-    "example_en_literal": "I beginning the explanation to BLANK.",
-    "definition_en_literal": "The meaning of something understand."
+    "example_en_literal": "I am beginning to BLANK the explanation.",
+    "definition_en_literal": "To grasp the meaning of something."
   },
   {
     "word": "proberen",
@@ -907,7 +907,7 @@
     "example_nl": "Een klacht was de BLANK voor het gesprek.",
     "word_en": "reason / trigger",
     "example_en_literal": "A complaint was the BLANK for the conversation.",
-    "definition_en_literal": "The reason why something begins or happens."
+    "definition_en_literal": "What causes something to begin or happen."
   },
   {
     "word": "toestand",
@@ -917,7 +917,7 @@
     "example_nl": "De BLANK van het gebouw is slecht.",
     "word_en": "condition / situation",
     "example_en_literal": "The BLANK of the building is bad.",
-    "definition_en_literal": "The situation in which something or someone itself finds."
+    "definition_en_literal": "The state in which something or someone is found."
   },
   {
     "word": "verband",
@@ -1127,7 +1127,7 @@
     "example_nl": "Vertrouwen vormt de BLANK van samenwerking.",
     "word_en": "foundation / basis",
     "example_en_literal": "Trust forms the BLANK of cooperation.",
-    "definition_en_literal": "The basis on which something is built or based."
+    "definition_en_literal": "The underlying base on which something is built or based."
   },
   {
     "word": "draagvlak",
@@ -1167,7 +1167,7 @@
     "example_nl": "De staking veroorzaakte BLANK in het openbaar vervoer.",
     "word_en": "disruption",
     "example_en_literal": "The strike caused BLANK in the public transport.",
-    "definition_en_literal": "A serious disruption whereby something not more normal works."
+    "definition_en_literal": "A serious disturbance through which something no longer works normally."
   },
   {
     "word": "weloverwogen",

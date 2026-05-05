@@ -33,7 +33,7 @@
     "definition_nl": "Voertuig met twee wielen dat je met pedalen beweegt.",
     "definition_en_literal": "Vehicle with two wheels that you with pedals moves.",
     "example_nl": "In Nederland gaat veel verkeer per BLANK.",
-    "example_en_literal": "In Netherlands goes much traffic by BLANK."
+    "example_en_literal": "In the Netherlands, a lot of traffic goes by BLANK."
   },
   {
     "word": "school",
@@ -256,7 +256,7 @@
     "difficulty": "A1",
     "word_en": "beautiful",
     "definition_nl": "Prettig om te zien of te ervaren.",
-    "definition_en_literal": "Pleasant to to see or to experience.",
+    "definition_en_literal": "Pleasant to see or experience.",
     "example_nl": "Wat een BLANK uitzicht.",
     "example_en_literal": "What a BLANK view."
   },
@@ -319,9 +319,9 @@
     "difficulty": "A1",
     "word_en": "time",
     "definition_nl": "Manier om duur of een moment aan te geven.",
-    "definition_en_literal": "Way to duration or a moment to to give.",
+    "definition_en_literal": "A way to indicate duration or a moment.",
     "example_nl": "Heb je BLANK om te praten?",
-    "example_en_literal": "Have you BLANK to to talk?"
+    "example_en_literal": "Do you have BLANK to talk?"
   },
   {
     "word": "uur",
@@ -418,7 +418,7 @@
     "difficulty": "A2",
     "word_en": "language",
     "definition_nl": "Systeem van woorden en regels om te communiceren.",
-    "definition_en_literal": "System of words and rules to to communicate.",
+    "definition_en_literal": "A system of words and rules used to communicate.",
     "example_nl": "Nederlands is een mooie BLANK.",
     "example_en_literal": "Dutch is a beautiful BLANK."
   },
@@ -472,9 +472,9 @@
     "difficulty": "A2",
     "word_en": "to write",
     "definition_nl": "Taal opschrijven met pen, potlood of toetsenbord.",
-    "definition_en_literal": "Language write down with pen, pencil or keyboard.",
+    "definition_en_literal": "To put language down with pen, pencil, or keyboard.",
     "example_nl": "Kun je je naam BLANK?",
-    "example_en_literal": "Can you you name BLANK?"
+    "example_en_literal": "Can you BLANK your name?"
   },
   {
     "word": "lezen",
@@ -688,7 +688,7 @@
     "difficulty": "B2",
     "word_en": "street language / slang",
     "definition_nl": "Informele taal die vaak in jongerencultuur wordt gebruikt.",
-    "definition_en_literal": "Informal language that often in youth culture becomes used.",
+    "definition_en_literal": "Informal speech often used in youth culture.",
     "example_nl": "BLANK verandert snel.",
     "example_en_literal": "BLANK changes fast."
   },
@@ -706,7 +706,7 @@
     "difficulty": "B1",
     "word_en": "difficult",
     "definition_nl": "Niet makkelijk; lastig om te doen of begrijpen.",
-    "definition_en_literal": "Not easy; difficult to to do or understand.",
+    "definition_en_literal": "Not easy; hard to do or grasp.",
     "example_nl": "Deze grammatica is BLANK.",
     "example_en_literal": "This grammar is BLANK."
   },
@@ -733,9 +733,9 @@
     "difficulty": "B1",
     "word_en": "to understand",
     "definition_nl": "De betekenis van iets snappen.",
-    "definition_en_literal": "The meaning of something understand.",
+    "definition_en_literal": "To grasp the meaning of something.",
     "example_nl": "Ik begin de uitleg te BLANK.",
-    "example_en_literal": "I beginning the explanation to BLANK."
+    "example_en_literal": "I am beginning to BLANK the explanation."
   },
   {
     "word": "proberen",
@@ -814,7 +814,7 @@
     "difficulty": "B2",
     "word_en": "reason / trigger",
     "definition_nl": "De reden waarom iets begint of gebeurt.",
-    "definition_en_literal": "The reason why something begins or happens.",
+    "definition_en_literal": "What causes something to begin or happen.",
     "example_nl": "Een klacht was de BLANK voor het gesprek.",
     "example_en_literal": "A complaint was the BLANK for the conversation."
   },
@@ -823,7 +823,7 @@
     "difficulty": "B2",
     "word_en": "condition / situation",
     "definition_nl": "De situatie waarin iets of iemand zich bevindt.",
-    "definition_en_literal": "The situation in which something or someone itself finds.",
+    "definition_en_literal": "The state in which something or someone is found.",
     "example_nl": "De BLANK van het gebouw is slecht.",
     "example_en_literal": "The BLANK of the building is bad."
   },
@@ -1012,7 +1012,7 @@
     "difficulty": "C2",
     "word_en": "foundation / basis",
     "definition_nl": "De basis waarop iets is gebouwd of gebaseerd.",
-    "definition_en_literal": "The basis on which something is built or based.",
+    "definition_en_literal": "The underlying base on which something is built or based.",
     "example_nl": "Vertrouwen vormt de BLANK van samenwerking.",
     "example_en_literal": "Trust forms the BLANK of cooperation."
   },
@@ -1048,7 +1048,7 @@
     "difficulty": "C2",
     "word_en": "disruption",
     "definition_nl": "Een ernstige verstoring waardoor iets niet meer normaal werkt.",
-    "definition_en_literal": "A serious disruption whereby something not more normal works.",
+    "definition_en_literal": "A serious disturbance through which something no longer works normally.",
     "example_nl": "De staking veroorzaakte BLANK in het openbaar vervoer.",
     "example_en_literal": "The strike caused BLANK in the public transport."
   },
