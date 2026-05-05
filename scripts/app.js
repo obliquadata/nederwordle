@@ -202,11 +202,8 @@ function renderResultPanel() {
     els.resultPanel.classList.remove("empty");
     els.resultPanel.innerHTML = `
       <p class="result-word">${escapeHtml(state.current.word)}</p>
-      <p class="translation">Engels woord: ${escapeHtml(getWordEnglish())}</p>
-      <p><strong>Nederlandse definitie:</strong> ${escapeHtml(state.current.definition_nl)}</p>
-      <p><strong>Letterlijke Engelse definitie:</strong> ${escapeHtml(getLiteralDefinitionEnglish())}</p>
-      <p><strong>Voorbeeldzin:</strong> ${escapeHtml(getRevealedExampleSentence())}</p>
-      <p><strong>Letterlijke Engelse voorbeeldzin:</strong> ${escapeHtml(getLiteralExampleEnglish())}</p>
+      <p class="translation">Engelse vertaling: ${escapeHtml(getWordEnglish())}</p>
+      <p class="result-note">De volledige hints blijven links zichtbaar om te bestuderen.</p>
     `;
     return;
   }
@@ -215,18 +212,14 @@ function renderResultPanel() {
     els.resultPanel.classList.remove("empty");
     els.resultPanel.innerHTML = `
       <p class="result-word">${escapeHtml(state.current.word)}</p>
-      <p class="translation">Engels woord: ${escapeHtml(getWordEnglish())}</p>
-      <p>Niet geraden deze ronde, maar je kunt het woord nu alsnog bestuderen.</p>
-      <p><strong>Nederlandse definitie:</strong> ${escapeHtml(state.current.definition_nl)}</p>
-      <p><strong>Letterlijke Engelse definitie:</strong> ${escapeHtml(getLiteralDefinitionEnglish())}</p>
-      <p><strong>Voorbeeldzin:</strong> ${escapeHtml(getRevealedExampleSentence())}</p>
-      <p><strong>Letterlijke Engelse voorbeeldzin:</strong> ${escapeHtml(getLiteralExampleEnglish())}</p>
+      <p class="translation">Engelse vertaling: ${escapeHtml(getWordEnglish())}</p>
+      <p class="result-note">Niet geraden deze ronde. De volledige hints staan links zodat je het woord alsnog kunt bestuderen.</p>
     `;
     return;
   }
 
   els.resultPanel.classList.add("empty");
-  els.resultPanel.innerHTML = "<p>Raad het woord om de Engelse vertaling en alle leerhints te zien.</p>";
+  els.resultPanel.innerHTML = "<p>Na afloop zie je hier kort het Nederlandse woord en de Engelse vertaling.</p>";
 }
 
 function renderMode() {
