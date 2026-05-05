@@ -121,7 +121,10 @@ function clueFor(word) {
     difficulty: inferDifficulty(word),
     definition_nl: "Nederlandse omschrijving volgt later. Raad het woord op basis van de letters.",
     definition_en: "translation to be added",
-    example_nl: "Voorbeeldzin volgt later met BLANK als vervanging."
+    word_en: "translation to be added",
+    example_nl: "Voorbeeldzin volgt later met BLANK als vervanging.",
+    example_en_literal: "Literal English example sentence to be added.",
+    definition_en_literal: "Literal English definition to be added."
   };
 }
 

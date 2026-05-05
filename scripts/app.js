@@ -1,4 +1,4 @@
-const MAX_ATTEMPTS = 6;
+const MAX_ATTEMPTS = 5;
 const STORAGE_KEY = "NederWordle-state-v2";
 const LEGACY_STORAGE_KEY = "NederWordle-state-v1";
 const STATS_KEY = "NederWordle-stats-v1";
@@ -23,6 +23,9 @@ const els = {
   message: document.getElementById("message"),
   definitionNl: document.getElementById("definitionNl"),
   exampleNl: document.getElementById("exampleNl"),
+  exampleEnLiteral: document.getElementById("exampleEnLiteral"),
+  definitionEnLiteral: document.getElementById("definitionEnLiteral"),
+  wordEn: document.getElementById("wordEn"),
   resultPanel: document.getElementById("resultPanel"),
   lengthPill: document.getElementById("lengthPill"),
   attemptsPill: document.getElementById("attemptsPill"),
@@ -151,20 +154,40 @@ function buildBoard() {
   }
 }
 
-function shouldShowExampleSentence() {
-  return state.gameOver || state.guesses.length > 0;
+function revealLevel() {
+  return state.gameOver ? MAX_ATTEMPTS : state.guesses.length;
+}
+
+function getWordEnglish() {
+  return state.current.word_en || state.current.definition_en || "English word to be added";
+}
+
+function getLiteralExampleEnglish() {
+  return state.current.example_en_literal || "Literal English example sentence to be added.";
+}
+
+function getLiteralDefinitionEnglish() {
+  return state.current.definition_en_literal || "Literal English definition to be added.";
+}
+
+function setClueLine(element, show, text) {
+  if (!element) return;
+  element.hidden = !show;
+  element.textContent = show ? text : "";
 }
 
 function renderClue() {
-  els.definitionNl.textContent = state.current.definition_nl;
-  if (shouldShowExampleSentence()) {
-    els.exampleNl.hidden = false;
-    els.exampleNl.textContent = `Voorbeeldzin: ${state.current.example_nl}`;
-  } else {
-    els.exampleNl.hidden = true;
-    els.exampleNl.textContent = "";
-  }
+  const level = revealLevel();
+  setClueLine(els.definitionNl, true, `Definitie (NL): ${state.current.definition_nl}`);
+  setClueLine(els.exampleNl, level >= 1, `Voorbeeldzin (NL): ${state.current.example_nl}`);
+  setClueLine(els.exampleEnLiteral, level >= 2, `Literal English sentence: ${getLiteralExampleEnglish()}`);
+  setClueLine(els.definitionEnLiteral, level >= 3, `Literal English definition: ${getLiteralDefinitionEnglish()}`);
+  setClueLine(els.wordEn, level >= 4, `English word: ${getWordEnglish()}`);
+
   els.lengthPill.textContent = `${state.current.word.length} letters`;
+  if (els.attemptsPill) {
+    els.attemptsPill.textContent = `${MAX_ATTEMPTS} pogingen`;
+  }
   if (els.difficultyPill) {
     els.difficultyPill.textContent = state.current.difficulty || "Alle niveaus";
   }
@@ -179,9 +202,11 @@ function renderResultPanel() {
     els.resultPanel.classList.remove("empty");
     els.resultPanel.innerHTML = `
       <p class="result-word">${escapeHtml(state.current.word)}</p>
-      <p class="translation">Engels: ${escapeHtml(state.current.definition_en)}</p>
+      <p class="translation">Engels woord: ${escapeHtml(getWordEnglish())}</p>
       <p><strong>Nederlandse definitie:</strong> ${escapeHtml(state.current.definition_nl)}</p>
+      <p><strong>Letterlijke Engelse definitie:</strong> ${escapeHtml(getLiteralDefinitionEnglish())}</p>
       <p><strong>Voorbeeldzin:</strong> ${escapeHtml(getRevealedExampleSentence())}</p>
+      <p><strong>Letterlijke Engelse voorbeeldzin:</strong> ${escapeHtml(getLiteralExampleEnglish())}</p>
     `;
     return;
   }
@@ -190,16 +215,18 @@ function renderResultPanel() {
     els.resultPanel.classList.remove("empty");
     els.resultPanel.innerHTML = `
       <p class="result-word">${escapeHtml(state.current.word)}</p>
-      <p class="translation">Engels: ${escapeHtml(state.current.definition_en)}</p>
+      <p class="translation">Engels woord: ${escapeHtml(getWordEnglish())}</p>
       <p>Niet geraden deze ronde, maar je kunt het woord nu alsnog bestuderen.</p>
       <p><strong>Nederlandse definitie:</strong> ${escapeHtml(state.current.definition_nl)}</p>
+      <p><strong>Letterlijke Engelse definitie:</strong> ${escapeHtml(getLiteralDefinitionEnglish())}</p>
       <p><strong>Voorbeeldzin:</strong> ${escapeHtml(getRevealedExampleSentence())}</p>
+      <p><strong>Letterlijke Engelse voorbeeldzin:</strong> ${escapeHtml(getLiteralExampleEnglish())}</p>
     `;
     return;
   }
 
   els.resultPanel.classList.add("empty");
-  els.resultPanel.innerHTML = "<p>Raad het woord om de Engelse vertaling en extra uitleg te zien.</p>";
+  els.resultPanel.innerHTML = "<p>Raad het woord om de Engelse vertaling en alle leerhints te zien.</p>";
 }
 
 function renderMode() {
@@ -415,8 +442,13 @@ async function init() {
   const words = await res.json();
 
   state.words = words
-    .filter((w) => w.word && w.definition_nl && w.definition_en)
-    .map((w) => ({ ...w, word: normalizeDutch(w.word), difficulty: DIFFICULTIES.includes(w.difficulty) ? w.difficulty : "B1" }))
+    .filter((w) => w.word && w.definition_nl && (w.word_en || w.definition_en))
+    .map((w) => ({
+      ...w,
+      word: normalizeDutch(w.word),
+      word_en: w.word_en || w.definition_en,
+      difficulty: DIFFICULTIES.includes(w.difficulty) ? w.difficulty : "B1"
+    }))
     .filter((w) => w.word.length >= 3 && w.word.length <= 12);
 
   const saved = loadState();

@@ -6,8 +6,12 @@ A static Dutch vocabulary game inspired by Wordle.
 - Daily word mode
 - Unlimited play mode
 - Variable word length
+- Progressive hint ladder across five attempts
 - Dutch definition shown before guessing
-- English translation revealed after the round
+- Dutch example sentence after one guess
+- Literal English sentence translation after two guesses
+- Literal English definition translation after three guesses
+- English word translation after four guesses
 - Easy-to-edit word bank in `data/words.json`
 - GitHub Pages friendly
 
@@ -25,9 +29,26 @@ Add more entries to `data/words.json` in this format:
   "word": "voorbeeld",
   "definition_nl": "Een uitleg of betekenis in het Nederlands.",
   "definition_en": "example",
-  "example_nl": "Dit is een voorbeeldzin."
+  "word_en": "example",
+  "example_nl": "Dit is een BLANK.",
+  "example_en_literal": "This is a BLANK.",
+  "definition_en_literal": "An explanation or meaning in the Dutch.",
+  "difficulty": "A2"
 }
 ```
+
+## Translation fields
+
+The game now uses these clue fields:
+
+- `definition_nl`: shown at 0 guesses.
+- `example_nl`: shown after 1 guess. Use `BLANK` where the answer belongs.
+- `example_en_literal`: shown after 2 guesses. This should follow the Dutch sentence word order as closely as possible to support learning.
+- `definition_en_literal`: shown after 3 guesses. This should be a literal, word-for-word English aid rather than polished English.
+- `word_en`: shown after 4 guesses.
+- `definition_en`: kept for backwards compatibility; it can match `word_en`.
+
+I also included `data/translation-review.json` as a proofreading view of the new translation fields. The initial literal English fields are intentionally direct and sometimes awkward, so they are easy to map back to Dutch.
 
 ## Deployment
 Upload the folder to GitHub Pages, Netlify, or any static host.

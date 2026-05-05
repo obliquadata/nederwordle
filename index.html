@@ -78,8 +78,7 @@
       <div class="hero__badge">🇳🇱 Woord van de dag + onbeperkt</div>
       <h1><span class="hero__title-accent">Neder</span>Wordle</h1>
       <p class="hero__subtitle">
-        Raad het Nederlandse woord op basis van een definitie in het Nederlands.
-        De woordlengte verandert per ronde, zodat het meer voelt als echte woordenschattraining dan als standaard Wordle.
+        Raad het Nederlandse woord met steeds sterkere hints: eerst een Nederlandse definitie, daarna een voorbeeldzin, letterlijke Engelse hulp, en uiteindelijk het Engelse woord.
       </p>
 
       <div class="top-controls">
@@ -109,10 +108,13 @@
         <h2 id="modeTitle">Woord van vandaag</h2>
         <p id="definitionNl" class="definition"></p>
         <p id="exampleNl" class="example"></p>
+        <p id="exampleEnLiteral" class="example"></p>
+        <p id="definitionEnLiteral" class="example"></p>
+        <p id="wordEn" class="example word-clue"></p>
         <div class="meta-row">
           <span id="lengthPill" class="pill"></span>
           <span id="difficultyPill" class="pill"></span>
-          <span id="attemptsPill" class="pill">6 pogingen</span>
+          <span id="attemptsPill" class="pill">5 pogingen</span>
         </div>
       </section>
 
@@ -140,7 +142,7 @@
       <aside class="card sidebar-card">
         <div class="card__label">Na een goed antwoord</div>
         <div id="resultPanel" class="result-panel empty">
-          <p>Raad het woord om de Engelse vertaling en extra uitleg te zien.</p>
+          <p>Raad het woord om de Engelse vertaling en alle leerhints te zien.</p>
         </div>
 
         <div class="stats">
@@ -161,10 +163,10 @@
         <details class="howto">
           <summary>Hoe werkt het?</summary>
           <p>Je krijgt eerst een definitie in het Nederlands. Daarna probeer je het juiste woord te raden.</p>
-          <p>Na één verkeerde gok verschijnt ook een voorbeeldzin als extra hint.</p>
-          <p>De lengte van het woord verandert per ronde. Dat maakt het spel flexibeler en bruikbaarder voor taalverwerving.</p>
+          <p>Na één verkeerde gok verschijnt een Nederlandse voorbeeldzin. Na twee gokken verschijnt een letterlijke Engelse vertaling van die zin. Na drie gokken verschijnt een letterlijke Engelse vertaling van de definitie. Na vier gokken verschijnt het Engelse woord.</p>
+          <p>Je hebt vijf pogingen. De lengte van het woord verandert per ronde. Dat maakt het spel flexibeler en bruikbaarder voor taalverwerving.</p>
           <p>In de dagelijkse modus krijgt iedereen op dezelfde dag hetzelfde woord uit alle niveaus. In onbeperkte modus kun je kiezen tussen alle niveaus, A1, A2, B1, B2, C1 en C2.</p>
-          <p>Na een goed antwoord verschijnt de Engelse vertaling, plus de Nederlandse definitie en een voorbeeldzin.</p>
+          <p>Na een goed antwoord verschijnen het Engelse woord, de Nederlandse definitie, de voorbeeldzin en de letterlijke Engelse leerhints.</p>
         </details>
       </aside>
     </main>
