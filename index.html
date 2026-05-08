@@ -87,18 +87,21 @@
           <button id="unlimitedModeBtn" class="mode-btn" type="button" aria-pressed="false">Onbeperkt</button>
         </div>
         <button id="newUnlimitedBtn" class="secondary-btn" type="button" hidden>Nieuw woord</button>
-        <label id="difficultyControl" class="difficulty-control" for="difficultySelect" hidden>
-          <span>Niveau</span>
-          <select id="difficultySelect" aria-label="Kies een moeilijkheidsniveau voor onbeperkte modus">
-            <option value="all">Alle niveaus</option>
-            <option value="A1">A1</option>
-            <option value="A2">A2</option>
-            <option value="B1">B1</option>
-            <option value="B2">B2</option>
-            <option value="C1">C1</option>
-            <option value="C2">C2</option>
-          </select>
-        </label>
+        <fieldset id="difficultyControl" class="difficulty-control" hidden>
+          <legend>Niveau</legend>
+          <label class="difficulty-option difficulty-option--all">
+            <input id="allDifficultiesCheckbox" type="checkbox" value="all" checked>
+            <span>Alle niveaus</span>
+          </label>
+          <div id="difficultyChecklist" class="difficulty-checklist" role="group" aria-label="Kies één of meer moeilijkheidsniveaus voor onbeperkte modus">
+            <label class="difficulty-option"><input type="checkbox" name="difficulty" value="A1" checked> <span>A1</span></label>
+            <label class="difficulty-option"><input type="checkbox" name="difficulty" value="A2" checked> <span>A2</span></label>
+            <label class="difficulty-option"><input type="checkbox" name="difficulty" value="B1" checked> <span>B1</span></label>
+            <label class="difficulty-option"><input type="checkbox" name="difficulty" value="B2" checked> <span>B2</span></label>
+            <label class="difficulty-option"><input type="checkbox" name="difficulty" value="C1" checked> <span>C1</span></label>
+            <label class="difficulty-option"><input type="checkbox" name="difficulty" value="C2" checked> <span>C2</span></label>
+          </div>
+        </fieldset>
       </div>
     </header>
 
@@ -165,7 +168,7 @@
           <p>Je krijgt eerst een definitie in het Nederlands. Daarna probeer je het juiste woord te raden.</p>
           <p>Na één verkeerde gok verschijnt een Nederlandse voorbeeldzin. Na twee gokken verschijnt een letterlijke Engelse vertaling van die zin. Na drie gokken verschijnt een letterlijke Engelse vertaling van de definitie. Na vier gokken verschijnt het Engelse woord.</p>
           <p>Je hebt vijf pogingen. De lengte van het woord verandert per ronde. Dat maakt het spel flexibeler en bruikbaarder voor taalverwerving.</p>
-          <p>In de dagelijkse modus krijgt iedereen op dezelfde dag hetzelfde woord uit alle niveaus. In onbeperkte modus kun je kiezen tussen alle niveaus, A1, A2, B1, B2, C1 en C2.</p>
+          <p>In de dagelijkse modus krijgt iedereen op dezelfde dag hetzelfde woord uit alle niveaus. In onbeperkte modus kun je één of meer niveaus aanvinken, bijvoorbeeld alleen B1 en B2, of alle niveaus tegelijk.</p>
           <p>Na een goed antwoord verschijnen het Engelse woord, de Nederlandse definitie, de voorbeeldzin en de letterlijke Engelse leerhints.</p>
         </details>
       </aside>

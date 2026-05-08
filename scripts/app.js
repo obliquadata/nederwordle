@@ -13,7 +13,7 @@ const state = {
   gameOver: false,
   won: false,
   dailyKey: null,
-  selectedDifficulty: "all",
+  selectedDifficulties: [...DIFFICULTIES],
 };
 
 const els = {
@@ -35,7 +35,8 @@ const els = {
   unlimitedModeBtn: document.getElementById("unlimitedModeBtn"),
   newUnlimitedBtn: document.getElementById("newUnlimitedBtn"),
   difficultyControl: document.getElementById("difficultyControl"),
-  difficultySelect: document.getElementById("difficultySelect"),
+  allDifficultiesCheckbox: document.getElementById("allDifficultiesCheckbox"),
+  difficultyCheckboxes: Array.from(document.querySelectorAll('input[name="difficulty"]')),
   modeTitle: document.getElementById("modeTitle"),
   statPlayed: document.getElementById("statPlayed"),
   statWon: document.getElementById("statWon"),
@@ -71,9 +72,55 @@ function getDailyWord(words, dateKey) {
   return words[idx];
 }
 
+function normalizeSelectedDifficulties(value, legacyValue = null) {
+  const uniqueValid = (items) => [...new Set(items)].filter((difficulty) => DIFFICULTIES.includes(difficulty));
+
+  if (Array.isArray(value)) {
+    const selected = uniqueValid(value);
+    return selected.length ? selected : [...DIFFICULTIES];
+  }
+
+  if (legacyValue === "all") return [...DIFFICULTIES];
+  if (DIFFICULTIES.includes(legacyValue)) return [legacyValue];
+
+  return [...DIFFICULTIES];
+}
+
+function getSelectedDifficulties() {
+  return normalizeSelectedDifficulties(state.selectedDifficulties);
+}
+
+function hasAllDifficultiesSelected() {
+  return getSelectedDifficulties().length === DIFFICULTIES.length;
+}
+
+function getDifficultyLabel() {
+  const selected = getSelectedDifficulties();
+  return selected.length === DIFFICULTIES.length ? "alle niveaus" : selected.join(", ");
+}
+
 function getDifficultyPool() {
-  if (state.selectedDifficulty === "all") return state.words;
-  return state.words.filter((word) => word.difficulty === state.selectedDifficulty);
+  const selected = new Set(getSelectedDifficulties());
+  return state.words.filter((word) => selected.has(word.difficulty));
+}
+
+function renderDifficultyControls() {
+  const selected = new Set(getSelectedDifficulties());
+
+  els.difficultyCheckboxes.forEach((checkbox) => {
+    checkbox.checked = selected.has(checkbox.value);
+  });
+
+  if (els.allDifficultiesCheckbox) {
+    els.allDifficultiesCheckbox.checked = selected.size === DIFFICULTIES.length;
+    els.allDifficultiesCheckbox.indeterminate = selected.size > 0 && selected.size < DIFFICULTIES.length;
+  }
+}
+
+function setSelectedDifficulties(nextSelected) {
+  const selected = normalizeSelectedDifficulties(nextSelected);
+  state.selectedDifficulties = selected;
+  renderDifficultyControls();
 }
 
 function pickUnlimitedWord(previousWord = null) {
@@ -111,7 +158,8 @@ function renderStats() {
 function saveState() {
   const payload = {
     mode: state.mode,
-    selectedDifficulty: state.selectedDifficulty,
+    selectedDifficulties: getSelectedDifficulties(),
+    selectedDifficulty: hasAllDifficultiesSelected() ? "all" : getSelectedDifficulties()[0] || "all",
     currentWord: state.current?.word || null,
     guesses: state.guesses,
     evaluations: state.evaluations,
@@ -410,7 +458,7 @@ function buildShareText() {
   const score = state.won ? `${state.guesses.length}/${MAX_ATTEMPTS}` : `X/${MAX_ATTEMPTS}`;
   const modeLabel = state.mode === "daily"
     ? `Dagelijks ${state.dailyKey}`
-    : `Onbeperkt ${state.selectedDifficulty === "all" ? "alle niveaus" : state.selectedDifficulty}`;
+    : `Onbeperkt ${getDifficultyLabel()}`;
   return `NederWordle ${modeLabel} ${score}\n${rows.join("\n")}\n\nhttps://obliquadata.github.io/nederwordle`;
 }
 
@@ -446,8 +494,8 @@ async function init() {
 
   const saved = loadState();
   state.mode = saved?.mode === "unlimited" ? "unlimited" : "daily";
-  state.selectedDifficulty = ["all", ...DIFFICULTIES].includes(saved?.selectedDifficulty) ? saved.selectedDifficulty : "all";
-  if (els.difficultySelect) els.difficultySelect.value = state.selectedDifficulty;
+  state.selectedDifficulties = normalizeSelectedDifficulties(saved?.selectedDifficulties, saved?.selectedDifficulty);
+  renderDifficultyControls();
 
   startRound({ preserveDaily: true });
 
@@ -478,15 +526,41 @@ async function init() {
     }
   });
 
-  if (els.difficultySelect) {
-    els.difficultySelect.addEventListener("change", (event) => {
-      state.selectedDifficulty = event.target.value;
+  if (els.allDifficultiesCheckbox) {
+    els.allDifficultiesCheckbox.addEventListener("change", (event) => {
+      if (!event.target.checked) {
+        renderDifficultyControls();
+        setMessage("Vink individuele niveaus uit om een kleinere selectie te maken.", true);
+        return;
+      }
+
+      setSelectedDifficulties(DIFFICULTIES);
       if (state.mode !== "unlimited") {
         state.mode = "unlimited";
       }
       startRound({ preserveDaily: false });
     });
   }
+
+  els.difficultyCheckboxes.forEach((checkbox) => {
+    checkbox.addEventListener("change", () => {
+      const selected = els.difficultyCheckboxes
+        .filter((item) => item.checked)
+        .map((item) => item.value);
+
+      if (!selected.length) {
+        checkbox.checked = true;
+        setMessage("Kies minstens één niveau.", true);
+        return;
+      }
+
+      setSelectedDifficulties(selected);
+      if (state.mode !== "unlimited") {
+        state.mode = "unlimited";
+      }
+      startRound({ preserveDaily: false });
+    });
+  });
 
   if (els.shareBtn) {
     els.shareBtn.addEventListener("click", () => {
